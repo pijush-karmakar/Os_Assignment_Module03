@@ -26,12 +26,12 @@
 
 
 
-function random_password( $length ) {
-    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?";
+function generatePassword( $length ) {
+    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?"; 
     $password = substr( str_shuffle( $chars ), 0, $length );
-    echo $password;
+    echo "Password: ".$password;
 }
- random_password(12 ) 
+generatePassword(12) ;
 
 
 
